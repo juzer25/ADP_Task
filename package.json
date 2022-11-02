@@ -1,0 +1,15 @@
+{
+  "name": "adp_task",
+  "version": "1.0.0",
+  "description": "ADP Task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Juzer Bhagat",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
