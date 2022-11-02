@@ -17,6 +17,8 @@ npm install
 npm start
 ```
 
+You should be able to see the outputs on the `console`
+
 ## Project Task
 A simple JavaScript(nodejs) application that makes an HTTP GET request to 
 ```
