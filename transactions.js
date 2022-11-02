@@ -7,9 +7,9 @@ const axios = require("axios");
  */
 async function getData(){
     //console.log(await axios.options('https://interview.adpeai.com/api/v2/get-task'));
-    const { data } = await axios.get('https://interview.adpeai.com/api/v2/get-task');
-   //console.log(data);
-    return data;
+    const data  = await axios.get('https://interview.adpeai.com/api/v2/get-task');
+   console.log(`GET Request status - ${data.status}`);
+    return data.data;
 }
 
 
@@ -89,7 +89,8 @@ const getTransactions = async function getTransactions(){
 const submitTask = async function submitTask(payload){
     
     let res = await axios.post("https://interview.adpeai.com/api/v2/submit-task", payload);
-   return {"status" : res.status, "statusText":res.statusText };
+    console.log(`POST Request status - ${res.status}`);
+    return {"status" : res.status, "statusText":res.statusText };
 }
 
 module.exports = {
